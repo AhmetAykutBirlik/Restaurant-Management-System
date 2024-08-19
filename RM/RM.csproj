@@ -98,6 +98,18 @@
     <Compile Include="RMView\frmCategoryView.Designer.cs">
       <DependentUpon>frmCategoryView.cs</DependentUpon>
     </Compile>
+    <Compile Include="RMView\frmTableAddS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RMView\frmTableAddS.Designer.cs">
+      <DependentUpon>frmTableAddS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RMView\FrmTableV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RMView\FrmTableV.Designer.cs">
+      <DependentUpon>FrmTableV.cs</DependentUpon>
+    </Compile>
     <Compile Include="SampleAddd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +146,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RMView\frmCategoryView.resx">
       <DependentUpon>frmCategoryView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RMView\frmTableAddS.resx">
+      <DependentUpon>frmTableAddS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RMView\FrmTableV.resx">
+      <DependentUpon>FrmTableV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SampleAddd.resx">
       <DependentUpon>SampleAddd.cs</DependentUpon>

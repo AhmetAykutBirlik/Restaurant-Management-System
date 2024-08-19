@@ -50,5 +50,11 @@ namespace RM
             AddControls(new frmCategoryView());
 
         }
+
+        private void btnTable_Click(object sender, EventArgs e)
+        {
+            AddControls(new FrmTableV());
+
+        }
     }
 }

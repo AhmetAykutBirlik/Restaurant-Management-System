@@ -120,16 +120,19 @@
   <metadata name="guna2MessageDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnAdd.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAT1JREFUaEPt
-        msFtg1AQRCktJVjGBbmEdOASfjowjQClOGC9XMhMRLxCWln7pHfbGXaFb7griuI1Wj+fWj/d23l6pHDd
-        5TJ/sN4+2nm8ybIUjlfW/Jvnm5AFidzzZpbB4VcwnwPrekQopazrUaGMsq5HhTLKuh4VyijrelQoo6zr
-        UaGI1B7Wa1GhiNTWIU5qPSoUkdo6xEmtR4UiUluHOKn1qFBEausQJ7UeFYpIbR3ipNajQlsZPQz1zK2M
-        elRoK6OHoZ65lVGPCkWk9rBeiwpFpLYOcVLrUaGI1NYhTmo9KhSR2jrESa1HhSJSW4c4qfWoUERq6xAn
-        tR4VyijrelQoo6zrUaGMsq5HhTLKuh4Vyijrepah/J/e+umLdT1v8zF0pfXjpyxI4c7P0z+sVy/BTD+z
-        4d9/GCiKArruG5vojw39ohMbAAAAAElFTkSuQmCC
-</value>
-  </data>
+  <metadata name="dgvSno.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="dgvid.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="dgvName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="dgvedit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="dgvdel.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

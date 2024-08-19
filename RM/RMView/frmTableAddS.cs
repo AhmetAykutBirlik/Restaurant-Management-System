@@ -8,26 +8,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
-namespace RM.RMModel
+namespace RM.RMView
 {
-    public partial class frmCategoryAdd : SampleAddd
+    public partial class frmTableAddS : Form
     {
-        public frmCategoryAdd()
+        public frmTableAddS()
         {
             InitializeComponent();
         }
-        public int id = 0;
-        public override void btnSave_Click(object sender, EventArgs e)
+        public int id =0;
+        private void frmTableAddS_Load(object sender, EventArgs e)
+        {
+
+        }
+       
+
+        public  void btnSave_Click_1(object sender, EventArgs e)
         {
             string qry = "";
             if (id == 0) //insert
             {
-                qry = "Insert into category Values (@Name)";
+                qry = "Insert into tables Values (@Name)";
             }
             else //update 
             {
-                qry = "Update category set catName = @Name where catId=@id";
+                qry = "Update tables set tname = @Name where tid=@id";
             }
             Hashtable ht = new Hashtable();
             ht.Add("@id", id);
@@ -39,8 +46,11 @@ namespace RM.RMModel
                 txtName.Text = "";
                 txtName.Focus();
             }
-
         }
 
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
