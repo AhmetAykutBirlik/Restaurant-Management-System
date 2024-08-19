@@ -28,7 +28,12 @@ namespace RM
 
         }
 
-
+        //for accessing frm
+        static frmMain _obj;
+        public static frmMain Instance
+        {
+            get { if( _obj == null) { _obj = new frmMain(); } return _obj; }
+        }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -38,6 +43,7 @@ namespace RM
         private void frmMain_Load(object sender, EventArgs e)
         {
             lblUser.Text = MainClass.USER;
+            _obj = this;
         }
 
         private void btnHome_Click(object sender, EventArgs e)

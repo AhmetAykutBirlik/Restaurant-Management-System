@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -46,8 +47,8 @@ namespace RM
         // Methord for curd operation
 
         public static int SQl(string qry, Hashtable ht)
-            {
-            int res = 0 ;
+        {
+            int res = 0;
             try
             {
                 SqlCommand cmd = new SqlCommand(qry, con);
@@ -66,8 +67,8 @@ namespace RM
                 MessageBox.Show(ex.ToString());
                 con.Close();
             }
-            return res ;
-            }
+            return res;
+        }
         // For Loading data from database
 
         public static void LoadData(string qry, DataGridView gv, ListBox lb)
@@ -89,7 +90,7 @@ namespace RM
                 }
                 gv.DataSource = dt;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
                 con.Close();
@@ -115,6 +116,25 @@ namespace RM
             {
                 count++;
                 row.Cells[0].Value = count;
+            }
+        }
+
+        public static void BlurBackground(Form Model)
+        {
+            Form Background = new Form();
+            using (Model)
+            {
+                Background.StartPosition = FormStartPosition.Manual;
+                Background.FormBorderStyle = FormBorderStyle.None;
+                Background.Opacity = 0.5d;
+                Background.BackColor = Color.Black;
+                Background.Size = frmMain.Instance.Size;
+                Background.Location = frmMain.Instance.Location;
+                Background.ShowInTaskbar = false;
+                Background.Show();
+                Model.Owner = Background;
+                Model.ShowDialog(Background);
+                Background.Dispose();
             }
         }
     }

@@ -33,8 +33,10 @@ namespace RM.RMView
         }
         public override void btnAdd_Click(object sender, EventArgs e)
         {
-            frmTableAddS frm = new frmTableAddS();
-            frm.ShowDialog();
+            //frmTableAddS frm = new frmTableAddS();
+            //frm.ShowDialog();
+
+            MainClass.BlurBackground(new frmTableAddS());
             GetData();
         }
 
