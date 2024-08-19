@@ -86,6 +86,30 @@
     <Compile Include="MainClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RMModel\frmCategoryAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RMModel\frmCategoryAdd.Designer.cs">
+      <DependentUpon>frmCategoryAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RMView\frmCategoryView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RMView\frmCategoryView.Designer.cs">
+      <DependentUpon>frmCategoryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SampleAddd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleAddd.Designer.cs">
+      <DependentUpon>SampleAddd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SampleVieww.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleVieww.Designer.cs">
+      <DependentUpon>SampleVieww.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmHome.resx">
       <DependentUpon>frmHome.cs</DependentUpon>
     </EmbeddedResource>
@@ -105,6 +129,18 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RMModel\frmCategoryAdd.resx">
+      <DependentUpon>frmCategoryAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RMView\frmCategoryView.resx">
+      <DependentUpon>frmCategoryView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleAddd.resx">
+      <DependentUpon>SampleAddd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleVieww.resx">
+      <DependentUpon>SampleVieww.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -181,6 +217,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Settings2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search1.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Pen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
