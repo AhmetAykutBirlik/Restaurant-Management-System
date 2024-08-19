@@ -1,6 +1,6 @@
 ﻿namespace RM.RMView
 {
-    partial class frmCategoryView
+    partial class frmTableView
     {
         /// <summary>
         /// Required designer variable.
@@ -39,11 +39,6 @@
             this.dgvdel = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label2
-            // 
-            this.label2.Size = new System.Drawing.Size(121, 25);
-            this.label2.Text = "Category List";
             // 
             // btnAdd
             // 
@@ -87,13 +82,13 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(12, 148);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(25, 148);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.ReadOnly = true;
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowTemplate.Height = 35;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(576, 290);
-            this.guna2DataGridView1.TabIndex = 4;
+            this.guna2DataGridView1.Size = new System.Drawing.Size(764, 290);
+            this.guna2DataGridView1.TabIndex = 5;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
@@ -116,7 +111,6 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.guna2DataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellClick);
-            this.guna2DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
             // 
             // dgvSno
             // 
@@ -165,16 +159,15 @@
             this.dgvdel.ReadOnly = true;
             this.dgvdel.Width = 50;
             // 
-            // frmCategoryView
+            // frmTableView
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(616, 450);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(801, 450);
             this.Controls.Add(this.guna2DataGridView1);
-            this.Name = "frmCategoryView";
-            this.Text = "frmCategoryView";
-            this.Load += new System.EventHandler(this.frmCategoryView_Load);
-            this.Controls.SetChildIndex(this.label1, 0);
-            this.Controls.SetChildIndex(this.guna2Separator1, 0);
+            this.Name = "frmTableView";
+            this.Text = "frmTable";
+            this.Load += new System.EventHandler(this.frmTableView_Load);
             this.Controls.SetChildIndex(this.label2, 0);
             this.Controls.SetChildIndex(this.btnAdd, 0);
             this.Controls.SetChildIndex(this.guna2DataGridView1, 0);
