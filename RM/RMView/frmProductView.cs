@@ -22,7 +22,7 @@ namespace RM.RMView
         }
         public void GetData()
         {
-            string qry = "select pID , pName , pPrice , CategoryID , c.catId from products p inner join category c on c.catId = p.CategoryID  /*where pName like '%" + txtSearch.Text + "%'*/ ";
+            string qry = "select pID , pName , pPrice , CategoryID ,  c.catName from products p inner join category c on c.catId = p.CategoryID  /*where pName like '%" + txtSearch.Text + "%'*/ ";
             ListBox lb = new ListBox();
             lb.Items.Add(dataGridViewTextBoxColumn2);
             lb.Items.Add(dataGridViewTextBoxColumn3);
@@ -61,10 +61,7 @@ namespace RM.RMView
                 frmProductAdd frm = new frmProductAdd();
                 frm.id = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dataGridViewTextBoxColumn2"].Value);
                 frm.cID = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dgvcatID"].Value);
-                //frm.txtPrice.Text = Convert.ToString(guna2DataGridView1.CurrentRow.Cells["dgvPrice"].Value);
-                //frm.cbCategory.Text = Convert.ToString(guna2DataGridView1.CurrentRow.Cells["dgvCat"].Value);
                 MainClass.BlurBackground(frm);
-                //frm.ShowDialog();
                 GetData();
             }
 
