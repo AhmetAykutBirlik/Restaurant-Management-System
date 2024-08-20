@@ -92,17 +92,41 @@
     <Compile Include="RMModel\frmCategoryAdd.Designer.cs">
       <DependentUpon>frmCategoryAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="RMModel\frmProductAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RMModel\frmProductAdd.Designer.cs">
+      <DependentUpon>frmProductAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RMModel\frmStaffAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RMModel\frmStaffAdd.Designer.cs">
+      <DependentUpon>frmStaffAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="RMView\frmCategoryView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RMView\frmCategoryView.Designer.cs">
       <DependentUpon>frmCategoryView.cs</DependentUpon>
     </Compile>
-    <Compile Include="RMView\frmTableAddS.cs">
+    <Compile Include="RMModel\frmTableAddS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RMView\frmTableAddS.Designer.cs">
+    <Compile Include="RMModel\frmTableAddS.Designer.cs">
       <DependentUpon>frmTableAddS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RMView\frmProductView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RMView\frmProductView.Designer.cs">
+      <DependentUpon>frmProductView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RMView\frmStaffView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RMView\frmStaffView.Designer.cs">
+      <DependentUpon>frmStaffView.cs</DependentUpon>
     </Compile>
     <Compile Include="RMView\FrmTableV.cs">
       <SubType>Form</SubType>
@@ -110,16 +134,16 @@
     <Compile Include="RMView\FrmTableV.Designer.cs">
       <DependentUpon>FrmTableV.cs</DependentUpon>
     </Compile>
-    <Compile Include="SampleAddd.cs">
+    <Compile Include="RMModel\SampleAddd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SampleAddd.Designer.cs">
+    <Compile Include="RMModel\SampleAddd.Designer.cs">
       <DependentUpon>SampleAddd.cs</DependentUpon>
     </Compile>
-    <Compile Include="SampleVieww.cs">
+    <Compile Include="RMView\SampleVieww.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SampleVieww.Designer.cs">
+    <Compile Include="RMView\SampleVieww.Designer.cs">
       <DependentUpon>SampleVieww.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="frmHome.resx">
@@ -144,19 +168,31 @@
     <EmbeddedResource Include="RMModel\frmCategoryAdd.resx">
       <DependentUpon>frmCategoryAdd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RMModel\frmProductAdd.resx">
+      <DependentUpon>frmProductAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RMModel\frmStaffAdd.resx">
+      <DependentUpon>frmStaffAdd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RMView\frmCategoryView.resx">
       <DependentUpon>frmCategoryView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RMView\frmTableAddS.resx">
+    <EmbeddedResource Include="RMModel\frmTableAddS.resx">
       <DependentUpon>frmTableAddS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RMView\frmProductView.resx">
+      <DependentUpon>frmProductView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RMView\frmStaffView.resx">
+      <DependentUpon>frmStaffView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RMView\FrmTableV.resx">
       <DependentUpon>FrmTableV.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SampleAddd.resx">
+    <EmbeddedResource Include="RMModel\SampleAddd.resx">
       <DependentUpon>SampleAddd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SampleVieww.resx">
+    <EmbeddedResource Include="RMView\SampleVieww.resx">
       <DependentUpon>SampleVieww.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
