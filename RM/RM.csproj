@@ -110,6 +110,18 @@
     <Compile Include="RMModel\frmStaffAdd.Designer.cs">
       <DependentUpon>frmStaffAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="RMModel\frmTableSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RMModel\frmTableSelection.Designer.cs">
+      <DependentUpon>frmTableSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RMModel\frmWaiter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RMModel\frmWaiter.Designer.cs">
+      <DependentUpon>frmWaiter.cs</DependentUpon>
+    </Compile>
     <Compile Include="RMModel\ucProduct.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -188,6 +200,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RMModel\frmStaffAdd.resx">
       <DependentUpon>frmStaffAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RMModel\frmTableSelection.resx">
+      <DependentUpon>frmTableSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RMModel\frmWaiter.resx">
+      <DependentUpon>frmWaiter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RMModel\ucProduct.resx">
       <DependentUpon>ucProduct.cs</DependentUpon>
@@ -328,6 +346,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\adana-kebap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\STable.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
