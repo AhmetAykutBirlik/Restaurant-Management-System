@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnSettings = new Guna.UI2.WinForms.Guna2Button();
             this.btnKitchen = new Guna.UI2.WinForms.Guna2Button();
@@ -181,6 +182,7 @@
             this.btnPos.Text = "POS";
             this.btnPos.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnPos.TextOffset = new System.Drawing.Point(20, 0);
+            this.btnPos.Click += new System.EventHandler(this.btnPos_Click);
             // 
             // btnTable
             // 
@@ -313,7 +315,7 @@
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Image = global::RM.Properties.Resources.Restaurant2;
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
