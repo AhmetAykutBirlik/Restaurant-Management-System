@@ -110,14 +110,13 @@ namespace RM.RMModel
                     if (Convert.ToInt32(item.Cells["dgvproID"].Value) == wdg.id)
                     {
                         item.Cells["dgvQty"].Value = int.Parse(item.Cells["dgvQty"].Value.ToString()) + 1;
-                        item.Cells["dgvAmount"].Value = int.Parse(item.Cells["dgvQty"].Value.ToString()) *
-                                                         double.Parse(item.Cells["dgvPrice"].Value.ToString());
+                        item.Cells["dgvAmount"].Value = int.Parse(item.Cells["dgvQty"].Value.ToString()) * double.Parse(item.Cells["dgvPrice"].Value.ToString());
                         return;
                     }
 
                 }
                 guna2DataGridView1.Rows.Add(new object[] { 0, 0, wdg.id, wdg.PName, 1, wdg.PPrice, wdg.PPrice });
-                //GetTotal();
+                GetTotal();
             };
         }
         //getting product from 
@@ -130,32 +129,33 @@ namespace RM.RMModel
             da.Fill(dt);
             foreach (DataRow item in dt.Rows)
             {
-                byte[] imagearray = (byte[])item["pImage"];
+                Byte[] imagearray = (byte[])item["pImage"];
                 byte[] imagebytearray = imagearray;
 
                 AddItems("0", item["pID"].ToString(), item["pName"].ToString(), item["catName"].ToString(),
                     item["pPrice"].ToString(), Image.FromStream(new MemoryStream(imagearray)));
             }
-
         }
-
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            foreach (var item in ProductPanel.Controls)
+            foreach (var item in CategoryPanel.Controls)
             {
-                var pro = (ucProduct)item;
-                pro.Visible = pro.PName.ToLower().Contains(txtSearch.Text.Trim().ToLower());
+                if (item is Guna.UI2.WinForms.Guna2Button)
+                {
+                    Guna.UI2.WinForms.Guna2Button b = (Guna.UI2.WinForms.Guna2Button)item;
+                    b.Checked = false;
+                }
             }
         }
 
         private void guna2DataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-            int count = 0;
-            foreach (DataGridViewRow row in guna2DataGridView1.Rows)
-            {
-                count++;
-                row.Cells[0].Value = count; // Corrected 'row.CellS' to 'row.Cells'
-            }
+                    int count = 0;
+                    foreach (DataGridViewRow row in guna2DataGridView1.Rows)
+                    {
+                        count++;
+                        row.Cells[0].Value = count; // Corrected 'row.CellS' to 'row.Cells'
+                    }
         }
         private void GetTotal()
         {
@@ -204,6 +204,7 @@ namespace RM.RMModel
 
         private void btnDin_Click(object sender, EventArgs e)
         {
+            OrderType = "Din In";
             //create for table selection and waiter selection
             frmTableSelection frm = new frmTableSelection();
             MainClass.BlurBackground(frm);
@@ -239,7 +240,7 @@ namespace RM.RMModel
             int detailID = 0;
             if (MainID == 0) //insert
             {
-                qry1 = @"Insert into tblMain values (@aDate, @aTime , @TableName , @status , @orderType , @total , @received , @change);
+                qry1 = @"Insert into tblMain values (@aDate, @aTime , @TableName ,@WaiterName, @status , @orderType , @total , @received , @change);
                 Select SCOPE_IDENTITY()";
             }
             else
@@ -250,13 +251,16 @@ namespace RM.RMModel
             SqlCommand cmd = new SqlCommand(qry1, MainClass.con);
 
             cmd.Parameters.AddWithValue("@ID", MainID);
-            cmd.Parameters.AddWithValue("@aDate", DateTime.Now.Date);
-            cmd.Parameters.AddWithValue("@aTime", DateTime.Now.ToLongTimeString());
+            cmd.Parameters.AddWithValue("@aDate",Convert.ToDateTime( DateTime.Now.Date));
+            cmd.Parameters.AddWithValue("@aTime", DateTime.Now.ToShortTimeString());
             cmd.Parameters.AddWithValue("@TableName", lblTable.Text);
             cmd.Parameters.AddWithValue("@WaiterName", lblWaiter.Text);
             cmd.Parameters.AddWithValue("@status", "Pending");
-            cmd.Parameters.AddWithValue("@orderType", OrderType);
-            cmd.Parameters.AddWithValue("@total", Convert.ToDouble(lblTotal));
+            cmd.Parameters.AddWithValue("@orderType", OrderType); // Eksik parametre
+
+            //cmd.Parameters.AddWithValue("@orderType", OrderType);
+            //cmd.Parameters.AddWithValue("@total", Convert.ToDouble(lblTotal));
+            cmd.Parameters.AddWithValue("@total", Convert.ToDouble(lblTotal.Text.Replace("₺", "").Trim()));
             cmd.Parameters.AddWithValue("@received", Convert.ToDouble(0));
             cmd.Parameters.AddWithValue("@change", Convert.ToDouble(0));
 
@@ -279,10 +283,10 @@ namespace RM.RMModel
                 SqlCommand cmd2 = new SqlCommand(qry2, MainClass.con);
                 cmd2.Parameters.AddWithValue("@ID", detailID);
                 cmd2.Parameters.AddWithValue("@MainID", MainID);
-                cmd2.Parameters.AddWithValue("@proID", row.Cells["dgvproID"]);
-                cmd2.Parameters.AddWithValue("@qty", row.Cells["dgvQty"]);
-                cmd2.Parameters.AddWithValue("@price", row.Cells["dgvPrice"]);
-                cmd2.Parameters.AddWithValue("@amount", row.Cells["dgvAmount"]);
+                cmd2.Parameters.AddWithValue("@proID",Convert.ToInt32 (row.Cells["dgvproID"].Value));
+                cmd2.Parameters.AddWithValue("@qty",Convert.ToInt32( row.Cells["dgvQty"].Value));
+                cmd2.Parameters.AddWithValue("@price",Convert.ToDouble( row.Cells["dgvPrice"].Value));
+                cmd2.Parameters.AddWithValue("@amount",Convert.ToDouble( row.Cells["dgvAmount"].Value));
 
                 if (MainClass.con.State == ConnectionState.Closed) { MainClass.con.Open(); }
                 cmd2.ExecuteNonQuery();
@@ -301,5 +305,9 @@ namespace RM.RMModel
             lblTotal.Text = "00";
         }
 
+        private void ProductPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

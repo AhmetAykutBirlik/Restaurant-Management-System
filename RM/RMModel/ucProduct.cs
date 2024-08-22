@@ -12,12 +12,12 @@ namespace RM.RMModel
 {
     public partial class ucProduct : UserControl
     {
-        public event EventHandler onSelect = null;
-
         public ucProduct()
         {
             InitializeComponent();
         }
+        public event EventHandler onSelect = null;
+
         public int id {  get; set; }
         public string PPrice { get; set; }
         public string PCategory { get; set; }
