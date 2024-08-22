@@ -140,6 +140,12 @@
     <Compile Include="RMModel\frmTableAddS.Designer.cs">
       <DependentUpon>frmTableAddS.cs</DependentUpon>
     </Compile>
+    <Compile Include="RMView\frmKitchen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RMView\frmKitchen.Designer.cs">
+      <DependentUpon>frmKitchen.cs</DependentUpon>
+    </Compile>
     <Compile Include="RMView\frmProductView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,6 +221,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RMModel\frmTableAddS.resx">
       <DependentUpon>frmTableAddS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RMView\frmKitchen.resx">
+      <DependentUpon>frmKitchen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RMView\frmProductView.resx">
       <DependentUpon>frmProductView.cs</DependentUpon>
