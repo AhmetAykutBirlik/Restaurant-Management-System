@@ -39,6 +39,7 @@ namespace RM.RMView
             lb.Items.Add(dgvtable);
             lb.Items.Add(dgvWaiter);
             lb.Items.Add(dgvType);
+            lb.Items.Add(dgvStatus);
             lb.Items.Add(dgvTotal);
 
             MainClass.LoadData(qry, guna2DataGridView1, lb);
@@ -62,7 +63,6 @@ namespace RM.RMView
             {
                 MainID = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dgvid"].Value);
                 this.Close();
-
             }
         }
     }

@@ -92,6 +92,12 @@
     <Compile Include="RMModel\frmCategoryAdd.Designer.cs">
       <DependentUpon>frmCategoryAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="RMModel\frmCheckOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RMModel\frmCheckOut.Designer.cs">
+      <DependentUpon>frmCheckOut.cs</DependentUpon>
+    </Compile>
     <Compile Include="RMModel\frmPOS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -203,6 +209,9 @@
     </Compile>
     <EmbeddedResource Include="RMModel\frmCategoryAdd.resx">
       <DependentUpon>frmCategoryAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RMModel\frmCheckOut.resx">
+      <DependentUpon>frmCheckOut.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RMModel\frmPOS.resx">
       <DependentUpon>frmPOS.cs</DependentUpon>
@@ -367,6 +376,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\STable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CheckOut.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
