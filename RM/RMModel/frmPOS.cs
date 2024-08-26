@@ -1,5 +1,6 @@
 ﻿using DevExpress.Data.NetCompatibility.Extensions;
 using Guna.UI2.WinForms;
+using RM.RMView;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -308,6 +309,20 @@ namespace RM.RMModel
         private void ProductPanel_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+        public int id= 0;
+        private void btnBill_Click(object sender, EventArgs e)
+        {
+            frmBillList frm = new frmBillList();
+            MainClass.BlurBackground( frm );
+            if(frm.MainID > 0)
+            {
+                LoadEntries();
+            }
+        }
+        private void LoadEntries()
+        {
+            string qry = @"";
         }
     }
 }

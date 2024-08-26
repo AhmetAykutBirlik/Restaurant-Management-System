@@ -258,6 +258,7 @@
             this.btnBill.Size = new System.Drawing.Size(62, 62);
             this.btnBill.TabIndex = 3;
             this.btnBill.Text = "Bill List";
+            this.btnBill.Click += new System.EventHandler(this.btnBill_Click);
             // 
             // btnKot
             // 
