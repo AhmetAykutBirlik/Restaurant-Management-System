@@ -22,7 +22,7 @@ namespace RM.RMModel
         private void frmWaiter_Load(object sender, EventArgs e)
         
         {
-            string qry = "Select * from staff where sRole like 'waiter'";
+            string qry = "Select * from staff where sRole = 'waiter'";
             SqlCommand cmd = new SqlCommand(qry ,MainClass.con);
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(cmd);

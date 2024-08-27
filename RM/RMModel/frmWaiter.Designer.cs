@@ -44,7 +44,7 @@
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(754, 100);
+            this.guna2Panel1.Size = new System.Drawing.Size(754, 156);
             this.guna2Panel1.TabIndex = 3;
             // 
             // label1
@@ -55,7 +55,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(159, 47);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 25);
+            this.label1.Size = new System.Drawing.Size(153, 32);
             this.label1.TabIndex = 1;
             this.label1.Text = "Select Waiter";
             // 

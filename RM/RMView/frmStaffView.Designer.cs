@@ -64,7 +64,7 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.Location = new System.Drawing.Point(45, 33);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 25);
+            this.label2.Size = new System.Drawing.Size(104, 32);
             this.label2.TabIndex = 5;
             this.label2.Text = "Staff List";
             // 
@@ -74,7 +74,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(432, 58);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 13);
+            this.label1.Size = new System.Drawing.Size(46, 15);
             this.label1.TabIndex = 6;
             this.label1.Text = "Search";
             // 
@@ -122,6 +122,7 @@
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearch.IconLeft = global::RM.Properties.Resources.Search;
             this.txtSearch.Location = new System.Drawing.Point(435, 74);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
             this.txtSearch.PlaceholderText = "Search Here";
@@ -170,6 +171,7 @@
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.ReadOnly = true;
             this.guna2DataGridView1.RowHeadersVisible = false;
+            this.guna2DataGridView1.RowHeadersWidth = 51;
             this.guna2DataGridView1.RowTemplate.Height = 35;
             this.guna2DataGridView1.Size = new System.Drawing.Size(676, 362);
             this.guna2DataGridView1.TabIndex = 9;
@@ -209,6 +211,7 @@
             // dgvid
             // 
             this.dgvid.HeaderText = "id";
+            this.dgvid.MinimumWidth = 6;
             this.dgvid.Name = "dgvid";
             this.dgvid.ReadOnly = true;
             this.dgvid.Visible = false;
@@ -216,18 +219,21 @@
             // dgvName
             // 
             this.dgvName.HeaderText = "Name";
+            this.dgvName.MinimumWidth = 6;
             this.dgvName.Name = "dgvName";
             this.dgvName.ReadOnly = true;
             // 
             // dgvPhone
             // 
             this.dgvPhone.HeaderText = "Phone";
+            this.dgvPhone.MinimumWidth = 6;
             this.dgvPhone.Name = "dgvPhone";
             this.dgvPhone.ReadOnly = true;
             // 
             // dgvRole
             // 
             this.dgvRole.HeaderText = "Role";
+            this.dgvRole.MinimumWidth = 6;
             this.dgvRole.Name = "dgvRole";
             this.dgvRole.ReadOnly = true;
             // 
