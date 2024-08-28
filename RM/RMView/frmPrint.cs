@@ -17,7 +17,7 @@ namespace RM.RMView
             InitializeComponent();
         }
 
-        private void frmPrint_Load(object sender, EventArgs e)
+        private void btnMax_Click(object sender, EventArgs e)
         {
             btnMax.PerformClick();
         }

@@ -1,14 +1,18 @@
-﻿using RM.RMModel;
+﻿using RM.NewFolder1;
+using RM.RMModel;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.WebControls;
 using System.Windows.Forms;
+using ListBox = System.Windows.Forms.ListBox;
 
 namespace RM.RMView
 {
@@ -63,6 +67,27 @@ namespace RM.RMView
             {
                 MainID = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dgvid"].Value);
                 this.Close();
+            }
+            if (guna2DataGridView1.CurrentCell.OwningColumn.Name == "dgvdel")
+            {
+                //print bill
+                string qry = @"SELECT * FROM tblMain m 
+                                        INNER JOIN tblDetails d ON m.MainID = d.MainID  
+                                        INNER JOIN products p ON p.pID = d.proID
+                                        where m.MainId = " + MainID + " ";
+                SqlCommand cmd = new SqlCommand(qry, MainClass.con);
+                MainClass.con.Open();
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+                MainClass.con.Close();
+
+                frmPrint frm = new frmPrint();
+                CrystalReport1Receipt cr = new CrystalReport1Receipt();
+                cr.SetDataSource(dt);
+                frm.crystalReportViewer1.ReportSource = cr;
+                frm.crystalReportViewer1.Refresh();
+                frm.Show();
             }
         }
     }

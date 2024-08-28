@@ -61,9 +61,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(160, 34);
+            this.label1.Location = new System.Drawing.Point(213, 42);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 25);
+            this.label1.Size = new System.Drawing.Size(88, 32);
             this.label1.TabIndex = 1;
             this.label1.Text = "Bill List";
             // 
@@ -75,8 +76,9 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(734, 95);
+            this.guna2Panel1.Size = new System.Drawing.Size(979, 117);
             this.guna2Panel1.TabIndex = 1;
             // 
             // guna2ControlBox1
@@ -84,9 +86,10 @@
             this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(686, 46);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(915, 57);
+            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
+            this.guna2ControlBox1.Size = new System.Drawing.Size(60, 36);
             this.guna2ControlBox1.TabIndex = 3;
             // 
             // guna2PictureBox1
@@ -94,9 +97,10 @@
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = global::RM.Properties.Resources.Bill_List;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(27, 12);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(36, 15);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(98, 79);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(131, 97);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
@@ -108,16 +112,17 @@
             this.guna2Panel2.Controls.Add(this.btnSave);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2Panel2.FillColor = System.Drawing.Color.Gainsboro;
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 419);
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 516);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(734, 10);
+            this.guna2Panel2.Size = new System.Drawing.Size(979, 12);
             this.guna2Panel2.TabIndex = 2;
             // 
             // btnClose
             // 
             this.btnClose.AutoRoundedCorners = true;
             this.btnClose.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnClose.BorderRadius = 21;
+            this.btnClose.BorderRadius = 26;
             this.btnClose.CustomizableEdges.TopRight = false;
             this.btnClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -126,9 +131,10 @@
             this.btnClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
             this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(131, 3);
+            this.btnClose.Location = new System.Drawing.Point(175, 4);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(122, 45);
+            this.btnClose.Size = new System.Drawing.Size(163, 55);
             this.btnClose.TabIndex = 2;
             this.btnClose.Text = "CLOSE";
             // 
@@ -136,7 +142,7 @@
             // 
             this.btnSave.AutoRoundedCorners = true;
             this.btnSave.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnSave.BorderRadius = 21;
+            this.btnSave.BorderRadius = 26;
             this.btnSave.CustomizableEdges.TopRight = false;
             this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -145,9 +151,10 @@
             this.btnSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
             this.btnSave.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(3, 3);
+            this.btnSave.Location = new System.Drawing.Point(4, 4);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(122, 45);
+            this.btnSave.Size = new System.Drawing.Size(163, 55);
             this.btnSave.TabIndex = 2;
             this.btnSave.Text = "SAVE";
             // 
@@ -198,12 +205,14 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(0, 97);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(0, 119);
+            this.guna2DataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.ReadOnly = true;
             this.guna2DataGridView1.RowHeadersVisible = false;
+            this.guna2DataGridView1.RowHeadersWidth = 51;
             this.guna2DataGridView1.RowTemplate.Height = 35;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(734, 332);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(979, 409);
             this.guna2DataGridView1.TabIndex = 5;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -243,6 +252,7 @@
             // dgvid
             // 
             this.dgvid.HeaderText = "id";
+            this.dgvid.MinimumWidth = 6;
             this.dgvid.Name = "dgvid";
             this.dgvid.ReadOnly = true;
             this.dgvid.Visible = false;
@@ -250,30 +260,35 @@
             // dgvtable
             // 
             this.dgvtable.HeaderText = "Table";
+            this.dgvtable.MinimumWidth = 6;
             this.dgvtable.Name = "dgvtable";
             this.dgvtable.ReadOnly = true;
             // 
             // dgvWaiter
             // 
             this.dgvWaiter.HeaderText = "Waiter";
+            this.dgvWaiter.MinimumWidth = 6;
             this.dgvWaiter.Name = "dgvWaiter";
             this.dgvWaiter.ReadOnly = true;
             // 
             // dgvType
             // 
             this.dgvType.HeaderText = "Order Type";
+            this.dgvType.MinimumWidth = 6;
             this.dgvType.Name = "dgvType";
             this.dgvType.ReadOnly = true;
             // 
             // dgvStatus
             // 
             this.dgvStatus.HeaderText = "Status";
+            this.dgvStatus.MinimumWidth = 6;
             this.dgvStatus.Name = "dgvStatus";
             this.dgvStatus.ReadOnly = true;
             // 
             // dgvTotal
             // 
             this.dgvTotal.HeaderText = "Total";
+            this.dgvTotal.MinimumWidth = 6;
             this.dgvTotal.Name = "dgvTotal";
             this.dgvTotal.ReadOnly = true;
             // 
@@ -287,7 +302,6 @@
             this.dgvdel.MinimumWidth = 50;
             this.dgvdel.Name = "dgvdel";
             this.dgvdel.ReadOnly = true;
-            this.dgvdel.Visible = false;
             this.dgvdel.Width = 50;
             // 
             // dgvedit
@@ -304,13 +318,14 @@
             // 
             // frmBillList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(734, 429);
+            this.ClientSize = new System.Drawing.Size(979, 528);
             this.Controls.Add(this.guna2DataGridView1);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2Panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmBillList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmBillList";
