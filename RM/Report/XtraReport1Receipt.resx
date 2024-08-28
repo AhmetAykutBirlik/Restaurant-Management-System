@@ -117,22 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="guna2MessageDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="dgvSno.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="dgvid.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="dgvName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="dgvedit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="dgvdel.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
+  <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9InRibERldGFpbHMiPjxGaWVsZCBOYW1lPSJEZXRhaWxJRCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1haW5JRCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InByb0lEIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icXR5IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icHJpY2UiIFR5cGU9IkRvdWJsZSIgLz48RmllbGQgTmFtZT0iYW1vdW50IiBUeXBlPSJEb3VibGUiIC8+PC9WaWV3PjxWaWV3IE5hbWU9InRibE1haW4iPjxGaWVsZCBOYW1lPSJNYWluSWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJhRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9ImFUaW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRhYmxlTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJXYWl0ZXJOYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InN0YXR1cyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJvcmRlclR5cGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0idG90YWwiIFR5cGU9IkRvdWJsZSIgLz48RmllbGQgTmFtZT0icmVjZWl2ZWQiIFR5cGU9IkRvdWJsZSIgLz48RmllbGQgTmFtZT0iY2hhbmdlIiBUeXBlPSJEb3VibGUiIC8+PEZpZWxkIE5hbWU9ImRyaXZlcklEIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VzdE5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VzdFBob25lIiBUeXBlPSJTdHJpbmciIC8+PC9WaWV3PjxWaWV3IE5hbWU9InByb2R1Y3RzIj48RmllbGQgTmFtZT0icElEIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icE5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0icFByaWNlIiBUeXBlPSJEb3VibGUiIC8+PEZpZWxkIE5hbWU9IkNhdGVnb3J5SUQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJwSW1hZ2UiIFR5cGU9IkJ5dGVBcnJheSIgLz48L1ZpZXc+PFZpZXcgTmFtZT0idGJsRGV0YWlsc18xIj48RmllbGQgTmFtZT0iRGV0YWlsSUQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWluSUQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJwcm9JRCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InF0eSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InByaWNlIiBUeXBlPSJEb3VibGUiIC8+PEZpZWxkIE5hbWU9ImFtb3VudCIgVHlwZT0iRG91YmxlIiAvPjxGaWVsZCBOYW1lPSJwSUQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJwTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJwUHJpY2UiIFR5cGU9IkRvdWJsZSIgLz48RmllbGQgTmFtZT0iQ2F0ZWdvcnlJRCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InBJbWFnZSIgVHlwZT0iQnl0ZUFycmF5IiAvPjxGaWVsZCBOYW1lPSJNYWluSWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJhRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9ImFUaW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRhYmxlTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJXYWl0ZXJOYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InN0YXR1cyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJvcmRlclR5cGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0idG90YWwiIFR5cGU9IkRvdWJsZSIgLz48RmllbGQgTmFtZT0icmVjZWl2ZWQiIFR5cGU9IkRvdWJsZSIgLz48RmllbGQgTmFtZT0iY2hhbmdlIiBUeXBlPSJEb3VibGUiIC8+PEZpZWxkIE5hbWU9ImRyaXZlcklEIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VzdE5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VzdFBob25lIiBUeXBlPSJTdHJpbmciIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+  </data>
 </root>

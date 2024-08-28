@@ -36,7 +36,7 @@ namespace RM.RMView
         {
             flowLayoutPanel1.Controls.Clear();
             string qry1 = @"Select * from tblMain where status = 'Pending'";
-            ; SqlCommand cmd1 = new SqlCommand(qry1, MainClass.con);
+            SqlCommand cmd1 = new SqlCommand(qry1, MainClass.con);
             DataTable dt1 = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(cmd1);
             da.Fill(dt1);
@@ -130,7 +130,6 @@ namespace RM.RMView
                 flowLayoutPanel1.Controls.Add(p1);
 
 
-
             }
         }
 
@@ -151,6 +150,7 @@ namespace RM.RMView
                     guna2MessageDialog1.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK;
                     guna2MessageDialog1.Show("Saved Successfully");
                 }
+                GetOrders();
             }
         }
     }

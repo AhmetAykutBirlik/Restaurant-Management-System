@@ -46,6 +46,7 @@ namespace RM.RMView
                 txtName.Text = "";
                 txtName.Focus();
             }
+            this.Close();
         }
 
         private void btnClose_Click(object sender, EventArgs e)

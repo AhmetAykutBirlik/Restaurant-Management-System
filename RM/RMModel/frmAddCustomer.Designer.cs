@@ -54,7 +54,7 @@
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(566, 155);
+            this.guna2Panel1.Size = new System.Drawing.Size(348, 52);
             this.guna2Panel1.TabIndex = 1;
             // 
             // guna2ControlBox1
@@ -62,7 +62,7 @@
             this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(509, 12);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(291, 12);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
             this.guna2ControlBox1.TabIndex = 10;
@@ -73,9 +73,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(167, 34);
+            this.label1.Location = new System.Drawing.Point(111, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(216, 32);
+            this.label1.Size = new System.Drawing.Size(170, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "Add Customer Info";
             // 
@@ -86,7 +86,7 @@
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(3, 3);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(158, 93);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(102, 47);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
@@ -117,7 +117,7 @@
             "Cleaning",
             "Manager",
             "Other"});
-            this.cbDriver.Location = new System.Drawing.Point(13, 36);
+            this.cbDriver.Location = new System.Drawing.Point(13, 32);
             this.cbDriver.Name = "cbDriver";
             this.cbDriver.Size = new System.Drawing.Size(200, 36);
             this.cbDriver.TabIndex = 1;
@@ -128,7 +128,7 @@
             this.lblDriver.AutoSize = true;
             this.lblDriver.Location = new System.Drawing.Point(13, 10);
             this.lblDriver.Name = "lblDriver";
-            this.lblDriver.Size = new System.Drawing.Size(55, 23);
+            this.lblDriver.Size = new System.Drawing.Size(46, 19);
             this.lblDriver.TabIndex = 7;
             this.lblDriver.Text = "Driver";
             // 
@@ -143,7 +143,7 @@
             this.txtName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtName.Location = new System.Drawing.Point(13, 102);
+            this.txtName.Location = new System.Drawing.Point(13, 94);
             this.txtName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtName.Name = "txtName";
             this.txtName.PasswordChar = '\0';
@@ -155,9 +155,9 @@
             // lblNName
             // 
             this.lblNName.AutoSize = true;
-            this.lblNName.Location = new System.Drawing.Point(13, 75);
+            this.lblNName.Location = new System.Drawing.Point(13, 71);
             this.lblNName.Name = "lblNName";
-            this.lblNName.Size = new System.Drawing.Size(56, 23);
+            this.lblNName.Size = new System.Drawing.Size(45, 19);
             this.lblNName.TabIndex = 8;
             this.lblNName.Text = "Name";
             // 
@@ -170,18 +170,18 @@
             this.flowLayoutPanel1.Controls.Add(this.lblPhone);
             this.flowLayoutPanel1.Controls.Add(this.txtPhone);
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 105);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 58);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(10);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(501, 333);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(324, 223);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // lblPhone
             // 
             this.lblPhone.AutoSize = true;
-            this.lblPhone.Location = new System.Drawing.Point(13, 142);
+            this.lblPhone.Location = new System.Drawing.Point(13, 134);
             this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(59, 23);
+            this.lblPhone.Size = new System.Drawing.Size(48, 19);
             this.lblPhone.TabIndex = 10;
             this.lblPhone.Text = "Phone";
             // 
@@ -196,7 +196,7 @@
             this.txtPhone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPhone.Location = new System.Drawing.Point(13, 169);
+            this.txtPhone.Location = new System.Drawing.Point(13, 157);
             this.txtPhone.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.PasswordChar = '\0';
@@ -209,7 +209,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(566, 450);
+            this.ClientSize = new System.Drawing.Size(348, 293);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.guna2Panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));

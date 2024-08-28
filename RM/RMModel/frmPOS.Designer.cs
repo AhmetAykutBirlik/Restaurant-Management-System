@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPOS));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnDelivery = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnTake = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnNew = new Guna.UI2.WinForms.Guna2TileButton();
@@ -63,8 +64,12 @@
             this.dgvQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblDriverName = new System.Windows.Forms.Label();
+            this.btnAllProduct = new Guna.UI2.WinForms.Guna2Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -72,17 +77,20 @@
             this.CategoryPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.Controls.Add(this.btnDelivery);
-            this.guna2Panel1.Controls.Add(this.btnTake);
+            this.guna2Panel1.Controls.Add(this.groupBox2);
+            this.guna2Panel1.Controls.Add(this.groupBox1);
+            this.guna2Panel1.Controls.Add(this.textBox1);
             this.guna2Panel1.Controls.Add(this.btnNew);
-            this.guna2Panel1.Controls.Add(this.btnDin);
             this.guna2Panel1.Controls.Add(this.btnHold);
             this.guna2Panel1.Controls.Add(this.btnBill);
-            this.guna2Panel1.Controls.Add(this.btnKot);
             this.guna2Panel1.Controls.Add(this.lblWaiter);
             this.guna2Panel1.Controls.Add(this.lblTable);
             this.guna2Panel1.Controls.Add(this.label1);
@@ -92,8 +100,16 @@
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1393, 181);
+            this.guna2Panel1.Size = new System.Drawing.Size(1049, 116);
             this.guna2Panel1.TabIndex = 0;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(142, 69);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(17, 25);
+            this.textBox1.TabIndex = 4;
+            this.textBox1.Visible = false;
             // 
             // btnDelivery
             // 
@@ -111,7 +127,7 @@
             this.btnDelivery.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnDelivery.ForeColor = System.Drawing.Color.White;
             this.btnDelivery.Image = ((System.Drawing.Image)(resources.GetObject("btnDelivery.Image")));
-            this.btnDelivery.Location = new System.Drawing.Point(477, 26);
+            this.btnDelivery.Location = new System.Drawing.Point(7, 24);
             this.btnDelivery.Name = "btnDelivery";
             this.btnDelivery.Size = new System.Drawing.Size(62, 62);
             this.btnDelivery.TabIndex = 3;
@@ -134,7 +150,7 @@
             this.btnTake.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnTake.ForeColor = System.Drawing.Color.White;
             this.btnTake.Image = ((System.Drawing.Image)(resources.GetObject("btnTake.Image")));
-            this.btnTake.Location = new System.Drawing.Point(545, 26);
+            this.btnTake.Location = new System.Drawing.Point(75, 24);
             this.btnTake.Name = "btnTake";
             this.btnTake.Size = new System.Drawing.Size(62, 62);
             this.btnTake.TabIndex = 3;
@@ -157,7 +173,7 @@
             this.btnNew.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnNew.ForeColor = System.Drawing.Color.White;
             this.btnNew.Image = ((System.Drawing.Image)(resources.GetObject("btnNew.Image")));
-            this.btnNew.Location = new System.Drawing.Point(205, 26);
+            this.btnNew.Location = new System.Drawing.Point(235, 27);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(62, 62);
             this.btnNew.TabIndex = 3;
@@ -180,7 +196,7 @@
             this.btnDin.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnDin.ForeColor = System.Drawing.Color.White;
             this.btnDin.Image = ((System.Drawing.Image)(resources.GetObject("btnDin.Image")));
-            this.btnDin.Location = new System.Drawing.Point(613, 26);
+            this.btnDin.Location = new System.Drawing.Point(143, 24);
             this.btnDin.Name = "btnDin";
             this.btnDin.Size = new System.Drawing.Size(62, 62);
             this.btnDin.TabIndex = 3;
@@ -203,7 +219,7 @@
             this.btnHold.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnHold.ForeColor = System.Drawing.Color.White;
             this.btnHold.Image = ((System.Drawing.Image)(resources.GetObject("btnHold.Image")));
-            this.btnHold.Location = new System.Drawing.Point(273, 26);
+            this.btnHold.Location = new System.Drawing.Point(303, 27);
             this.btnHold.Name = "btnHold";
             this.btnHold.Size = new System.Drawing.Size(62, 62);
             this.btnHold.TabIndex = 3;
@@ -226,7 +242,7 @@
             this.btnBill.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnBill.ForeColor = System.Drawing.Color.White;
             this.btnBill.Image = ((System.Drawing.Image)(resources.GetObject("btnBill.Image")));
-            this.btnBill.Location = new System.Drawing.Point(341, 26);
+            this.btnBill.Location = new System.Drawing.Point(371, 25);
             this.btnBill.Name = "btnBill";
             this.btnBill.Size = new System.Drawing.Size(62, 62);
             this.btnBill.TabIndex = 3;
@@ -249,7 +265,7 @@
             this.btnKot.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnKot.ForeColor = System.Drawing.Color.White;
             this.btnKot.Image = ((System.Drawing.Image)(resources.GetObject("btnKot.Image")));
-            this.btnKot.Location = new System.Drawing.Point(409, 26);
+            this.btnKot.Location = new System.Drawing.Point(6, 22);
             this.btnKot.Name = "btnKot";
             this.btnKot.Size = new System.Drawing.Size(62, 62);
             this.btnKot.TabIndex = 3;
@@ -262,9 +278,9 @@
             this.lblWaiter.BackColor = System.Drawing.Color.Transparent;
             this.lblWaiter.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblWaiter.ForeColor = System.Drawing.Color.White;
-            this.lblWaiter.Location = new System.Drawing.Point(698, 64);
+            this.lblWaiter.Location = new System.Drawing.Point(747, 57);
             this.lblWaiter.Name = "lblWaiter";
-            this.lblWaiter.Size = new System.Drawing.Size(94, 37);
+            this.lblWaiter.Size = new System.Drawing.Size(73, 30);
             this.lblWaiter.TabIndex = 2;
             this.lblWaiter.Text = "Waiter";
             this.lblWaiter.Visible = false;
@@ -275,9 +291,9 @@
             this.lblTable.BackColor = System.Drawing.Color.Transparent;
             this.lblTable.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblTable.ForeColor = System.Drawing.Color.White;
-            this.lblTable.Location = new System.Drawing.Point(698, 26);
+            this.lblTable.Location = new System.Drawing.Point(747, 25);
             this.lblTable.Name = "lblTable";
-            this.lblTable.Size = new System.Drawing.Size(79, 37);
+            this.lblTable.Size = new System.Drawing.Size(61, 30);
             this.lblTable.TabIndex = 2;
             this.lblTable.Text = "Table";
             this.lblTable.Visible = false;
@@ -288,9 +304,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(137, 36);
+            this.label1.Location = new System.Drawing.Point(137, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 37);
+            this.label1.Size = new System.Drawing.Size(52, 30);
             this.label1.TabIndex = 2;
             this.label1.Text = "POS";
             // 
@@ -301,9 +317,9 @@
             this.btnExit.BackColor = System.Drawing.Color.Transparent;
             this.btnExit.Image = global::RM.Properties.Resources.Shutdown1;
             this.btnExit.ImageRotate = 0F;
-            this.btnExit.Location = new System.Drawing.Point(1264, 3);
+            this.btnExit.Location = new System.Drawing.Point(920, 3);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(62, 149);
+            this.btnExit.Size = new System.Drawing.Size(62, 84);
             this.btnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnExit.TabIndex = 1;
             this.btnExit.TabStop = false;
@@ -330,9 +346,9 @@
             this.guna2Panel2.Controls.Add(this.label2);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2Panel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 618);
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 688);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1393, 133);
+            this.guna2Panel2.Size = new System.Drawing.Size(1049, 63);
             this.guna2Panel2.TabIndex = 0;
             // 
             // btnCheckout
@@ -349,7 +365,7 @@
             this.btnCheckout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
             this.btnCheckout.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnCheckout.ForeColor = System.Drawing.Color.White;
-            this.btnCheckout.Location = new System.Drawing.Point(1139, 6);
+            this.btnCheckout.Location = new System.Drawing.Point(777, 8);
             this.btnCheckout.Name = "btnCheckout";
             this.btnCheckout.Size = new System.Drawing.Size(122, 45);
             this.btnCheckout.TabIndex = 1;
@@ -363,9 +379,9 @@
             this.lblTotal.BackColor = System.Drawing.Color.Transparent;
             this.lblTotal.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblTotal.ForeColor = System.Drawing.Color.White;
-            this.lblTotal.Location = new System.Drawing.Point(1335, 15);
+            this.lblTotal.Location = new System.Drawing.Point(973, 17);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(68, 37);
+            this.lblTotal.Size = new System.Drawing.Size(51, 30);
             this.lblTotal.TabIndex = 2;
             this.lblTotal.Text = "0.00";
             // 
@@ -376,19 +392,18 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(1267, 15);
+            this.label2.Location = new System.Drawing.Point(905, 17);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 37);
+            this.label2.Size = new System.Drawing.Size(62, 30);
             this.label2.TabIndex = 2;
             this.label2.Text = "Total:";
             // 
             // CategoryPanel
             // 
             this.CategoryPanel.Controls.Add(this.guna2Button1);
-            this.CategoryPanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.CategoryPanel.Location = new System.Drawing.Point(0, 181);
+            this.CategoryPanel.Location = new System.Drawing.Point(3, 173);
             this.CategoryPanel.Name = "CategoryPanel";
-            this.CategoryPanel.Size = new System.Drawing.Size(146, 437);
+            this.CategoryPanel.Size = new System.Drawing.Size(145, 516);
             this.CategoryPanel.TabIndex = 1;
             // 
             // guna2Button1
@@ -402,18 +417,21 @@
             this.guna2Button1.Location = new System.Drawing.Point(3, 3);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(134, 45);
-            this.guna2Button1.TabIndex = 1;
+            this.guna2Button1.TabIndex = 2;
             this.guna2Button1.Text = "guna2Button1";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // ProductPanel
             // 
-            this.ProductPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.ProductPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.ProductPanel.AutoScroll = true;
             this.ProductPanel.BackColor = System.Drawing.Color.IndianRed;
-            this.ProductPanel.Location = new System.Drawing.Point(152, 255);
+            this.ProductPanel.Location = new System.Drawing.Point(154, 173);
             this.ProductPanel.Name = "ProductPanel";
-            this.ProductPanel.Size = new System.Drawing.Size(959, 357);
-            this.ProductPanel.TabIndex = 1;
+            this.ProductPanel.Size = new System.Drawing.Size(620, 516);
+            this.ProductPanel.TabIndex = 33;
             this.ProductPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ProductPanel_Paint);
             // 
             // dataGridViewImageColumn1
@@ -454,16 +472,16 @@
             // 
             this.guna2DataGridView1.AllowUserToAddRows = false;
             this.guna2DataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.guna2DataGridView1.ColumnHeadersHeight = 40;
             this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -474,23 +492,23 @@
             this.dgvQty,
             this.dgvPrice,
             this.dgvAmount});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle9;
             this.guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(1117, 181);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(780, 116);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.ReadOnly = true;
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 51;
             this.guna2DataGridView1.RowTemplate.Height = 35;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(276, 437);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(269, 572);
             this.guna2DataGridView1.TabIndex = 10;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -579,38 +597,90 @@
             this.dgvAmount.ReadOnly = true;
             this.dgvAmount.Width = 60;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(172, 200);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(357, 29);
-            this.textBox1.TabIndex = 4;
-            // 
             // lblDriverName
             // 
             this.lblDriverName.AutoSize = true;
             this.lblDriverName.BackColor = System.Drawing.Color.Transparent;
             this.lblDriverName.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblDriverName.ForeColor = System.Drawing.Color.Black;
-            this.lblDriverName.Location = new System.Drawing.Point(538, 192);
+            this.lblDriverName.Location = new System.Drawing.Point(12, 15);
             this.lblDriverName.Name = "lblDriverName";
-            this.lblDriverName.Size = new System.Drawing.Size(79, 37);
-            this.lblDriverName.TabIndex = 2;
+            this.lblDriverName.Size = new System.Drawing.Size(61, 30);
+            this.lblDriverName.TabIndex = 34;
             this.lblDriverName.Text = "Table";
             this.lblDriverName.Visible = false;
+            // 
+            // btnAllProduct
+            // 
+            this.btnAllProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAllProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAllProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAllProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAllProduct.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAllProduct.ForeColor = System.Drawing.Color.White;
+            this.btnAllProduct.Location = new System.Drawing.Point(3, 3);
+            this.btnAllProduct.Name = "btnAllProduct";
+            this.btnAllProduct.Size = new System.Drawing.Size(134, 45);
+            this.btnAllProduct.TabIndex = 36;
+            this.btnAllProduct.Text = "All Product";
+            this.btnAllProduct.Click += new System.EventHandler(this.btnAllProduct_Click);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.btnAllProduct);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 119);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(145, 55);
+            this.flowLayoutPanel1.TabIndex = 1;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.lblDriverName);
+            this.panel1.Location = new System.Drawing.Point(151, 119);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(623, 52);
+            this.panel1.TabIndex = 35;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.btnDelivery);
+            this.groupBox1.Controls.Add(this.btnDin);
+            this.groupBox1.Controls.Add(this.btnTake);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(525, 3);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(216, 101);
+            this.groupBox1.TabIndex = 35;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Order Type";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.btnKot);
+            this.groupBox2.ForeColor = System.Drawing.Color.White;
+            this.groupBox2.Location = new System.Drawing.Point(439, 3);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(80, 101);
+            this.groupBox2.TabIndex = 35;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Kitchen";
             // 
             // frmPOS
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1393, 751);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(1049, 751);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.guna2DataGridView1);
             this.Controls.Add(this.ProductPanel);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.CategoryPanel);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.lblDriverName);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -627,8 +697,12 @@
             this.CategoryPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -652,7 +726,6 @@
         private System.Windows.Forms.FlowLayoutPanel CategoryPanel;
         private System.Windows.Forms.FlowLayoutPanel ProductPanel;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Label label2;
         public Guna.UI2.WinForms.Guna2MessageDialog guna2MessageDialog1;
@@ -667,5 +740,11 @@
         public Guna.UI2.WinForms.Guna2Button btnCheckout;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lblDriverName;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btnAllProduct;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }

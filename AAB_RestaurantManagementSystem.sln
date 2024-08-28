@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Login Form", "Login Form", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RM", "RM\RM.csproj", "{E240F51A-1FC2-448E-82E5-3428E3F074D5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{DE90CD82-0457-4E49-86DF-F9BF7A3A6BC9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E240F51A-1FC2-448E-82E5-3428E3F074D5} = {8FDE82A5-3294-4A3A-B7E9-FB15274A4A09}
+		{DE90CD82-0457-4E49-86DF-F9BF7A3A6BC9} = {8FDE82A5-3294-4A3A-B7E9-FB15274A4A09}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2C3BFE4B-344B-46A5-A2A4-D4760D4C247A}

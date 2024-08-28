@@ -170,6 +170,7 @@ namespace RM.RMModel
             foreach (DataGridViewRow item in guna2DataGridView1.Rows)
             {
                 tot += double.Parse(item.Cells["dgvAmount"].Value.ToString());
+                
             }
             lblTotal.Text = tot.ToString("N2");
         }
@@ -208,6 +209,7 @@ namespace RM.RMModel
                 customerPhone = frm.txtPhone.Text;
 
             }
+            GetTotal();
 
         }
 
@@ -233,6 +235,7 @@ namespace RM.RMModel
                 customerName = frm.txtName.Text;
                 customerPhone = frm.txtPhone.Text;
             }
+            GetTotal();
         }
 
         private void btnDin_Click(object sender, EventArgs e)
@@ -272,7 +275,8 @@ namespace RM.RMModel
             string qry2 = ""; //Detail
 
             int detailID = 0;
-            if (MainID == 0) //insert
+            if (MainID == 0) //
+                             //
             {
                 qry1 = @"Insert into tblMain values (@aDate, @aTime , @TableName ,@WaiterName, @status , @orderType , @total , @received , @change ,@driverID, @CustName , @CustPhone);
                 Select SCOPE_IDENTITY()";
@@ -289,7 +293,7 @@ namespace RM.RMModel
             cmd.Parameters.AddWithValue("@aTime", DateTime.Now.ToShortTimeString());
             cmd.Parameters.AddWithValue("@TableName", lblTable.Text);
             cmd.Parameters.AddWithValue("@WaiterName", lblWaiter.Text);
-            cmd.Parameters.AddWithValue("@status", "Hold");
+            cmd.Parameters.AddWithValue("@status", "Pending");
             cmd.Parameters.AddWithValue("@orderType", OrderType); // Eksik parametre
             cmd.Parameters.AddWithValue("@total", Convert.ToDouble(lblTotal.Text));
             cmd.Parameters.AddWithValue("@received", Convert.ToDouble(0));
@@ -313,6 +317,7 @@ namespace RM.RMModel
                 {
                     qry2 = @"Update tblDetails set proıD = @proId , qty = @qty , price = @price , amount = @amount
                             where DetailID=@ID ";
+
                 }
                 SqlCommand cmd2 = new SqlCommand(qry2, MainClass.con);
                 cmd2.Parameters.AddWithValue("@ID", detailID);
@@ -324,8 +329,8 @@ namespace RM.RMModel
 
                 if (MainClass.con.State == ConnectionState.Closed) { MainClass.con.Open(); }
                 cmd2.ExecuteNonQuery();
-                if (MainClass.con.State == ConnectionState.Open) { MainClass.con.Close(); }
 
+                if (MainClass.con.State == ConnectionState.Open) { MainClass.con.Close(); }
 
             }
             guna2MessageDialog1.Show("Saved successfully");
@@ -416,6 +421,8 @@ namespace RM.RMModel
                 count++;
                 row.Cells[0].Value = count;
             }
+            GetTotal();
+
         }
         private void btnCheckout_Click(object sender, EventArgs e)
         {
@@ -514,6 +521,22 @@ namespace RM.RMModel
             lblWaiter.Visible = false;
             lblTotal.Text = "00";
             lblDriverName.Text = "";
+        }
+
+        private void btnAllProduct_Click(object sender, EventArgs e)
+        {
+            //string query = "SELECT * FROM products";
+            //SqlCommand cmd = new SqlCommand(query, MainClass.con);
+            //SqlDataAdapter da = new SqlDataAdapter(cmd);
+            //DataTable dt = new DataTable();
+            //da.Fill(dt);
+            LoadProducts();
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
