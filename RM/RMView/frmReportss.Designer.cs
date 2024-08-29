@@ -115,7 +115,7 @@
             this.btnSaleCat.Location = new System.Drawing.Point(370, 86);
             this.btnSaleCat.Margin = new System.Windows.Forms.Padding(4);
             this.btnSaleCat.Name = "btnSaleCat";
-            this.btnSaleCat.Size = new System.Drawing.Size(180, 100);
+            this.btnSaleCat.Size = new System.Drawing.Size(177, 100);
             this.btnSaleCat.TabIndex = 1;
             this.btnSaleCat.Text = "Sale By Category";
             this.btnSaleCat.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
