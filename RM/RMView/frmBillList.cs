@@ -36,8 +36,8 @@ namespace RM.RMView
         }
         private void LoadData()
         {
-            string qry = @"Select MainID , TableName , WaiterName , orderType , status , total from tblMain
-                        where status <>'Pending'";
+            string qry = @"SELECT MainID, TableName, WaiterName, orderType, status, total 
+                   FROM tblMain WHERE status <>'Pending'";
             ListBox lb = new ListBox();
             lb.Items.Add(dgvid);
             lb.Items.Add(dgvtable);
@@ -70,6 +70,7 @@ namespace RM.RMView
             }
             if (guna2DataGridView1.CurrentCell.OwningColumn.Name == "dgvdel")
             {
+                MainID = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dgvid"].Value);
                 //print bill
                 string qry = @"SELECT * FROM tblMain m 
                                         INNER JOIN tblDetails d ON m.MainID = d.MainID  
@@ -79,12 +80,16 @@ namespace RM.RMView
                 MainClass.con.Open();
                 DataTable dt = new DataTable();
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
+                //dt.Load(cmd.ExecuteReader());
                 da.Fill(dt);
+
                 MainClass.con.Close();
 
                 frmPrint frm = new frmPrint();
-                CrystalReport1Receipt cr = new CrystalReport1Receipt();
+                CrystalReport1Receipr cr = new CrystalReport1Receipr();
+                cr.SetDatabaseLogon("aab", "123");
                 cr.SetDataSource(dt);
+
                 frm.crystalReportViewer1.ReportSource = cr;
                 frm.crystalReportViewer1.Refresh();
                 frm.Show();

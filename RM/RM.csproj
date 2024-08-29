@@ -90,10 +90,10 @@
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="MainClass.cs" />
-    <Compile Include="NewFolder1\CrystalReport1Receipt.cs">
+    <Compile Include="NewFolder1\CrystalReport1Receipr.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CrystalReport1Receipt.rpt</DependentUpon>
+      <DependentUpon>CrystalReport1Receipr.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Program.cs" />
@@ -221,9 +221,9 @@
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewFolder1\CrystalReport1Receipt.rpt">
+    <EmbeddedResource Include="NewFolder1\CrystalReport1Receipr.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalReport1Receipt.cs</LastGenOutput>
+      <LastGenOutput>CrystalReport1Receipr.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

@@ -16,14 +16,14 @@ namespace RM.NewFolder1 {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class CrystalReport1Receipt : ReportClass {
+    public class CrystalReport1Receipr : ReportClass {
         
-        public CrystalReport1Receipt() {
+        public CrystalReport1Receipr() {
         }
         
         public override string ResourceName {
             get {
-                return "CrystalReport1Receipt.rpt";
+                return "CrystalReport1Receipr.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace RM.NewFolder1 {
         
         public override string FullResourceName {
             get {
-                return "RM.NewFolder1.CrystalReport1Receipt.rpt";
+                return "RM.NewFolder1.CrystalReport1Receipr.rpt";
             }
             set {
                 // Do nothing
@@ -90,9 +90,9 @@ namespace RM.NewFolder1 {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedCrystalReport1Receipt : Component, ICachedReport {
+    public class CachedCrystalReport1Receipr : Component, ICachedReport {
         
-        public CachedCrystalReport1Receipt() {
+        public CachedCrystalReport1Receipr() {
         }
         
         [Browsable(false)]
@@ -129,7 +129,7 @@ namespace RM.NewFolder1 {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            CrystalReport1Receipt rpt = new CrystalReport1Receipt();
+            CrystalReport1Receipr rpt = new CrystalReport1Receipr();
             rpt.Site = this.Site;
             return rpt;
         }
