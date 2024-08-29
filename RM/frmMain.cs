@@ -88,5 +88,11 @@ namespace RM
             AddControls(new frmKitchen());
 
         }
+
+        private void btnReports_Click(object sender, EventArgs e)
+        {
+            AddControls(new frmReportss());
+
+        }
     }
 }

@@ -96,6 +96,18 @@
       <DependentUpon>CrystalReport1Receipr.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="NewFolder1\rptMenu.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptMenu.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NewFolder1\rptStaffList.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptStaffList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RMModel\frmAddCustomer.cs">
@@ -188,6 +200,18 @@
     <Compile Include="RMView\frmProductView.Designer.cs">
       <DependentUpon>frmProductView.cs</DependentUpon>
     </Compile>
+    <Compile Include="RMView\frmReportss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RMView\frmReportss.Designer.cs">
+      <DependentUpon>frmReportss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RMView\frmSaleByCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RMView\frmSaleByCategory.Designer.cs">
+      <DependentUpon>frmSaleByCategory.cs</DependentUpon>
+    </Compile>
     <Compile Include="RMView\frmStaffView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,6 +248,14 @@
     <EmbeddedResource Include="NewFolder1\CrystalReport1Receipr.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalReport1Receipr.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder1\rptMenu.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptMenu.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder1\rptStaffList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptStaffList.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -280,6 +312,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RMView\frmProductView.resx">
       <DependentUpon>frmProductView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RMView\frmReportss.resx">
+      <DependentUpon>frmReportss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RMView\frmSaleByCategory.resx">
+      <DependentUpon>frmSaleByCategory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RMView\frmStaffView.resx">
       <DependentUpon>frmStaffView.cs</DependentUpon>
@@ -420,6 +458,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report21.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
