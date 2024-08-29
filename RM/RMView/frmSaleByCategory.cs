@@ -21,31 +21,40 @@ namespace RM.RMView
 
         private void btnReport_Click(object sender, EventArgs e)
         {
-            string qry = @"Select * from tblMain m 
-                            inner join tblDetails d on m.MainID = d.MainID
-                            inner join products p on p.pID = d.proID
-                            inner join category c on c.catID = p.CategoryID
-                            where m.aDate between @sdate and @edate";
-            SqlCommand cmd = new SqlCommand(qry, MainClass.con);
-            cmd.Parameters.AddWithValue("@sdate",Convert.ToDateTime(dateTimePicker1.Value).Date);
-            cmd.Parameters.AddWithValue("@edate",Convert.ToDateTime(dateTimePicker2.Value).Date);
+            string qry = @"SELECT * FROM tblMain m 
+                   INNER JOIN tblDetails d ON m.MainID = d.MainID
+                   INNER JOIN products p ON p.pID = d.proID
+                   INNER JOIN category c ON c.catID = p.CategoryID
+                   WHERE m.aDate BETWEEN @sdate AND @edate"; // Sorgunun WHERE kısmını doğru yere taşıdık.
 
-            MainClass.con.Open();
-            DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            //dt.Load(cmd.ExecuteReader());
-            da.Fill(dt);
+            using (SqlCommand cmd = new SqlCommand(qry, MainClass.con))
+            {
+                cmd.Parameters.AddWithValue("@sdate", dateTimePicker1.Value.Date); // Convert.ToDateTime gereksiz
+                cmd.Parameters.AddWithValue("@edate", dateTimePicker2.Value.Date); // Convert.ToDateTime gereksiz
 
-            MainClass.con.Close();
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
 
-            frmPrint frm = new frmPrint();
-            rptSaleByCategory cr = new rptSaleByCategory();
-            cr.SetDatabaseLogon("aab", "123");
-            cr.SetDataSource(dt);
+                try
+                {
+                    MainClass.con.Open();
+                    da.Fill(dt); // Sadece DataAdapter kullanarak dolduruyoruz.
+                }
+                finally
+                {
+                    MainClass.con.Close();
+                }
 
-            frm.crystalReportViewer1.ReportSource = cr;
-            frm.crystalReportViewer1.Refresh();
-            frm.Show();
+                frmPrint frm = new frmPrint();
+                rptSaleByCategory cr = new rptSaleByCategory();
+                cr.SetDatabaseLogon("aab", "123"); // Eğer gerekliyse bu bilgiyi kullanın.
+                cr.SetDataSource(dt);
+
+                frm.crystalReportViewer1.ReportSource = cr;
+                frm.crystalReportViewer1.Refresh();
+                frm.Show();
+            }
         }
+
     }
 }
