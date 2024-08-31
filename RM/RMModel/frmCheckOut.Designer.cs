@@ -79,7 +79,7 @@
             this.label1.Location = new System.Drawing.Point(156, 35);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 25);
+            this.label1.Size = new System.Drawing.Size(126, 32);
             this.label1.TabIndex = 1;
             this.label1.Text = "Check Out";
             // 
@@ -122,7 +122,7 @@
             this.btnClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
             this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(122, 3);
+            this.btnClose.Location = new System.Drawing.Point(149, 4);
             this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(114, 47);
@@ -172,6 +172,7 @@
             this.txtBillAmount.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBillAmount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBillAmount.Location = new System.Drawing.Point(63, 136);
+            this.txtBillAmount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtBillAmount.Name = "txtBillAmount";
             this.txtBillAmount.PasswordChar = '\0';
             this.txtBillAmount.PlaceholderText = "";
@@ -184,7 +185,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(60, 116);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 17);
+            this.label3.Size = new System.Drawing.Size(99, 23);
             this.label3.TabIndex = 6;
             this.label3.Text = "Bill Amount";
             // 
@@ -201,6 +202,7 @@
             this.txtChange.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtChange.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtChange.Location = new System.Drawing.Point(63, 207);
+            this.txtChange.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtChange.Name = "txtChange";
             this.txtChange.PasswordChar = '\0';
             this.txtChange.PlaceholderText = "";
@@ -213,7 +215,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(60, 187);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 17);
+            this.label2.Size = new System.Drawing.Size(69, 23);
             this.label2.TabIndex = 8;
             this.label2.Text = "Change";
             // 
@@ -229,6 +231,7 @@
             this.txtReceived.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtReceived.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtReceived.Location = new System.Drawing.Point(284, 136);
+            this.txtReceived.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtReceived.Name = "txtReceived";
             this.txtReceived.PasswordChar = '\0';
             this.txtReceived.PlaceholderText = "";
@@ -242,13 +245,13 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(281, 116);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(113, 17);
+            this.label4.Size = new System.Drawing.Size(148, 23);
             this.label4.TabIndex = 10;
             this.label4.Text = "Payment Received";
             // 
             // frmCheckOut
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(561, 353);
             this.Controls.Add(this.txtReceived);
